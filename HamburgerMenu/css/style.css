@@ -43,6 +43,15 @@ img {
   }
 }
 
+@media (max-height: 411px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+    left: 30px;
+    top: 15px;
+  }
+}
+
 .btn-wrapper {
   position: absolute;
   top: 50%;
@@ -158,6 +167,13 @@ hamburger-menu
   z-index: 100;
 }
 
+@media (max-height: 411px) {
+  .hamburger-menu {
+    top: 30px;
+    right: 35px;
+  }
+}
+
 .line {
   width: inherit;
   height: 5px;
@@ -236,8 +252,8 @@ top-nav
 
 @media (max-width: 450px) {
   .top-nav {
-    height: 35vh;
-    top: -35vh;
+    height: 40vh;
+    top: -40vh;
   }
 }
 
@@ -378,8 +394,8 @@ bottom-nav
 
 @media (max-width: 450px) {
   .bottom-nav {
-    height: 65vh;
-    bottom: -65vh;
+    height: 60vh;
+    bottom: -60vh;
   }
 }
 

@@ -80,6 +80,12 @@ section img {
   }
 }
 
+@media (max-height: 414px) {
+  .text {
+    font-size: 5em;
+  }
+}
+
 .road {
   z-index: 2;
 }

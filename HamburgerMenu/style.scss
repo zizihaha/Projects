@@ -74,6 +74,12 @@ img{
     height: 70px;
     left: 30px;
   }
+  @include h411{
+    width: 70px;
+    height: 70px;
+    left: 30px;
+    top: 15px;
+  }
 }
 
 .btn-wrapper{
@@ -159,6 +165,10 @@ hamburger-menu
   justify-content: space-between;
   cursor: pointer;
   z-index: 100;
+  @include h411{
+    top: 30px;
+    right: 35px;
+  }
 }
 
 .line{
@@ -217,8 +227,8 @@ top-nav
     top: -30vh;
   }
   @include w450{
-    height: 35vh;
-    top: -35vh;
+    height: 40vh;
+    top: -40vh;
   }
 }
 
@@ -307,8 +317,8 @@ bottom-nav
     bottom: -70vh;
   }
   @include w450{
-    height: 65vh;
-    bottom: -65vh;
+    height: 60vh;
+    bottom: -60vh;
   }
 }
 

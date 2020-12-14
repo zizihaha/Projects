@@ -11,6 +11,11 @@
       @content;
   }
 }
+@mixin h414{
+  @media (max-height:414px){
+      @content;
+  }
+}
 
 *{
   margin: 0;
@@ -74,6 +79,9 @@ section{
   }
   @include w414{
     font-size: 6em;
+  }
+  @include h414{
+    font-size: 5em;
   }
 }
 
