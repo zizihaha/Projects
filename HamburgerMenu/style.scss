@@ -13,8 +13,8 @@
       @content;
   }
 }
-@mixin w750{
-  @media (max-width:750px){
+@mixin w768{
+  @media (max-width:768px){
       @content;
   }
 }
@@ -28,6 +28,12 @@
       @content;
   }
 }
+@mixin h411{
+  @media (max-height:411px){
+      @content;
+  }
+}
+
 
 *{
   margin: 0;
@@ -94,6 +100,7 @@ img{
   transform: rotateX(70deg) rotateZ(30deg);
   transform-style: preserve-3d;
   transition: transform .5s;
+  box-sizing: border-box;
   @include w900{
     width: 300px;
     height: 80px;
@@ -197,6 +204,7 @@ top-nav
   top: -15vh;
   z-index: 50;
   transition: top .5s;
+  border: 1px solid yollow;
   @include w1200{
     background: #010101;
   }
@@ -232,7 +240,7 @@ top-nav
       flex-wrap: wrap;
       align-content: center;
     }
-    @include w750{
+    @include w768{
       width: 60%;
     }
     @include w450{
@@ -258,6 +266,9 @@ top-nav
   }
   @include w900{
     margin: 3px 0;
+  }
+  @include h411{
+    font-size: 20px;
   }
   &::after{
     content: attr(data-text);
@@ -341,13 +352,14 @@ bottom-nav
   @include w1200{
     width: 180px;
     height: 180px;
-    margin: 20px; // 有間距
+    margin: 20px;
   }
   @include w900{
     width: 140px;
     height: 140px;
+    margin: 10px;
   }
-  @include w750{
+  @include w768{
     width: 120px;
     height: 120px;  
   }
@@ -355,12 +367,20 @@ bottom-nav
     width: 110px;
     height: 110px;
   }
+  @include h411{
+    width: 90px;
+    height: 90px;
+  }
+
   &::before,&::after {
     content: '';
     height: 25px;
     width: 5px;
     background-color: #fff;
     position: absolute;
+    @include h411{
+      height: 20px;
+    }
   }
   &::before{
     top: 0;
@@ -404,13 +424,18 @@ bottom-nav
         height: 90px;
         font-size: 30px;
       }
-      @include w750{
+      @include w768{
         width: 70px;
         height: 70px;
       }
       @include w550{
         width: 60px;
         height: 60px;
+      }
+      @include h411{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
       }
       &::after{
         content: '';

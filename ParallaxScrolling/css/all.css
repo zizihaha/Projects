@@ -64,6 +64,20 @@ section img {
   color: #ffffff;
   font-size: 10em;
   z-index: 1;
+  text-align: center;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 8em;
+  }
+}
+
+@media (max-width: 414px) {
+  .text {
+    font-size: 6em;
+  }
 }
 
 .road {

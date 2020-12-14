@@ -75,6 +75,8 @@ img {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 900px) {
@@ -209,6 +211,7 @@ top-nav
   z-index: 50;
   -webkit-transition: top .5s;
   transition: top .5s;
+  border: 1px solid yollow;
 }
 
 @media (max-width: 1200px) {
@@ -276,7 +279,7 @@ top-nav
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .nav-list {
     width: 60%;
   }
@@ -317,6 +320,12 @@ top-nav
 @media (max-width: 900px) {
   .nav-link {
     margin: 3px 0;
+  }
+}
+
+@media (max-height: 411px) {
+  .nav-link {
+    font-size: 20px;
   }
 }
 
@@ -456,10 +465,11 @@ bottom-nav
   .icon-link {
     width: 140px;
     height: 140px;
+    margin: 10px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .icon-link {
     width: 120px;
     height: 120px;
@@ -473,12 +483,25 @@ bottom-nav
   }
 }
 
+@media (max-height: 411px) {
+  .icon-link {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 .icon-link::before, .icon-link::after {
   content: '';
   height: 25px;
   width: 5px;
   background-color: #fff;
   position: absolute;
+}
+
+@media (max-height: 411px) {
+  .icon-link::before, .icon-link::after {
+    height: 20px;
+  }
 }
 
 .icon-link::before {
@@ -545,7 +568,7 @@ bottom-nav
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .icon-link i {
     width: 70px;
     height: 70px;
@@ -556,6 +579,14 @@ bottom-nav
   .icon-link i {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (max-height: 411px) {
+  .icon-link i {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
   }
 }
 
